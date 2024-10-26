@@ -1,0 +1,15 @@
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\bin\Debug\net6.0\Leran.exe
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\bin\Debug\net6.0\Leran.deps.json
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\bin\Debug\net6.0\Leran.runtimeconfig.json
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\bin\Debug\net6.0\Leran.dll
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\bin\Debug\net6.0\Leran.pdb
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.csproj.AssemblyReference.cache
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.AssemblyInfoInputs.cache
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.AssemblyInfo.cs
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.csproj.CoreCompileInputs.cache
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.dll
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\refint\Leran.dll
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.pdb
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.genruntimeconfig.cache
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\ref\Leran.dll
