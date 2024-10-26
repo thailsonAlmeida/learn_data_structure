@@ -1,5 +1,11 @@
 # Estudo sobre estrutura de dados
 
+# Objetivo
+- Revisar conceitos aprendidos na faculdade.
+- Fortalecer fundamentos e conceitos.
+- Por mão na massa.
+- Estar preparado para o mercado.
+
 # Tópicos de aprendizado
 - Tópicos iniciais
 - Strings
