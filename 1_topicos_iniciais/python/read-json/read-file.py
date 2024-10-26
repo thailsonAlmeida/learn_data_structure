@@ -1,5 +1,5 @@
 import json
-from dateutil import parser
+from dateutil import parser # type: ignore
 
 with open('file.json', 'r') as file :
     jsonData = json.load(file)

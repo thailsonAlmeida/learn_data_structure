@@ -1,4 +1,4 @@
-package org.acounts;
+package org.acounts.product;
 
 public class Product {
     private   String name;
