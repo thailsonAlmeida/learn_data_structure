@@ -13,3 +13,5 @@ C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\
 C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.pdb
 C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.genruntimeconfig.cache
 C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\ref\Leran.dll
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\workspace\estrutura-de-dados\1_topicos_iniciais\csharp\Leran\Leran\obj\Debug\net6.0\Leran.csproj.CopyComplete

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8QkPOFN4dkH02y5JK8CxRJ9gk4EylZFpeiPWM9ZYJjLztG4djCVUsbnqqxds1DydMyi6NIHYXuivcCa/2AuqaA==",
+  "dgSpecHash": "fKYu1/1H+DjevXr0Mo27oaVB9yYooKd2tuOv704EPtHyRsTazkvxw++G7Fjoq/wSl4ZzHbkAxmeteHPHLbKC2w==",
   "success": true,
   "projectFilePath": "C:\\workspace\\estrutura-de-dados\\1_topicos_iniciais\\csharp\\Leran\\Leran\\Leran.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Thailson\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
