@@ -53,3 +53,100 @@ str = arr.join(""); // Converte o array de volta para string
     - **padStart** Preenche a string original com um determinado caractere (ou conjunto de caracteres) no início da string até alcançar o comprimento desejado.
     - **padEnd** Preenche a string original com um determinado caractere (ou conjunto de caracteres) no final da string até alcançar o comprimento desejado.
 
+# Referência sobre regex
+## Caracteres Especiais
+- **.** Corresponde a qualquer caractere, exceto quebra de linha. Por exemplo, /.at/ corresponde a "cat", "bat", e "rat".
+
+- **\d** Corresponde a qualquer dígito de 0 a 9.
+
+- **\D** Corresponde a qualquer caractere que não seja um dígito de 0 a 9.
+
+- **\w** Corresponde a qualquer caractere alfanumérico, incluindo o sublinhado (_). Equivalente a ``[A-Za-z0-9_]``.
+
+- **\W** Corresponde a qualquer caractere que não seja alfanumérico.
+
+- **\s** Corresponde a qualquer caractere de espaço em branco, incluindo espaço, tabulação, alimentação de formulário e quebras de linha.
+
+- **\S** Corresponde a qualquer caractere que não seja de espaço em branco.
+
+- **\b** Corresponde a uma fronteira de palavra, como o espaço entre duas palavras.
+
+- **\B** Corresponde a uma posição que não é uma fronteira de palavra.
+
+- **^** Corresponde ao início de uma string, ou ao início de uma linha se a flag m for utilizada.
+
+- **$** Corresponde ao final de uma string, ou ao final de uma linha se a flag m for utilizada.
+
+- **[]** Usado para especificar um conjunto de caracteres. Por exemplo, ``[abc]`` corresponde a qualquer um dos caracteres "a", "b" ou "c".
+
+## Quantificadores
+- ***'*'** Corresponde a zero ou mais ocorrências do elemento anterior.
+
+- **+** Corresponde a uma ou mais ocorrências do elemento anterior.
+
+- **?** Corresponde a zero ou uma ocorrência do elemento anterior.
+
+- **{n}** Corresponde exatamente a n ocorrências do elemento anterior.
+
+- **{n,}** Corresponde a n ou mais ocorrências do elemento anterior.
+
+- **{n,m}** Corresponde de n a m ocorrências do elemento anterior, sendo ambas inclusivas.
+
+## Caracteres de Escape
+- **'\'** É usado para escapar um metacaractere, permitindo que você corresponda ao próprio caractere, como '\'. para corresponder a um ponto literal, ou '\/' para corresponder a uma barra, ou '\\'para corresponder a uma barra invertida.
+
+## Grupos e Intervalos
+- **()** Usado para agrupar caracteres e capturar o texto correspondente.
+
+- **(?:)** Agrupa caracteres sem capturar o texto correspondente.
+
+**|** Operador OR, corresponde a qualquer um dos padrões separados por ele.
+
+## Flags
+- **g** Realiza uma correspondência global, ou seja, encontra todas as correspondências, em vez de parar após a primeira correspondência.
+
+- **i** Torna a correspondência insensível a maiúsculas e minúsculas.
+
+- **m** Multilinha, faz com que ^ e $ correspondam ao início e ao fim de cada linha, em vez de apenas o início e o fim de toda a string.
+
+- **s** Permite que o . corresponda também a quebras de linha.
+
+- **u** Trata o padrão como uma sequência Unicode.
+
+- **y** Realiza uma correspondência "sticky", buscando correspondências apenas a partir do índice indicado pela propriedade lastIndex do objeto RegExp.
+
+## Algumas regex comuns
+
+Atenção: repare que todas as regex a seguir começam e terminam com ^ e $ respectivamente. Isso significa que a string toda deverá ser verificada para o padrão da regex, não podendo conter outros conteúdos antes e depois do padrão.
+
+```javascript
+//Email (simplificada)
+/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+
+//URL (simplificada)
+/^((https?|ftp):\/\/)?(([a-z0-9-]+\.)+[a-z]{2,}|((\d{1,3}\.){3}\d{1,3}))(:(\d{2,5}))?(\/[a-z0-9-\.\/?#@&%;=~_|]*)?$/
+
+//Telefone brasileiro
+/^(?:\+55\s?)?(?:\([1-9]{2}\)|[1-9]{2})\s?(?:9\s?)?[6789][0-9]{3}\s?-?\s?[0-9]{4}$/
+
+//CEP brasileiro
+/^\d{5}-?\d{3}$/
+
+//Data no formato aaaa-mm-dd (simplificada)
+/^\d{4}-\d{2}-\d{2}$/
+
+//Data no formato dd/mm/aaaa (com validação de dia entre 1 e 31, e mês de 1 a 12, podendo ou não ter zero à esquerda dos valores menores que 10)
+/^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[012])\/(19|20)\d\d$/
+
+//Senha “forte” (pelo menos 8 caracteres, com pelo menos uma letra maiúscula, uma minúscula, um número e um caractere especial)
+/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+
+//Número inteiro
+/^[-+]?\d+$/
+
+//Número de ponto flutuante
+/^[-+]?\d*\.?\d+$/
+
+//IPv4
+/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/
+```
