@@ -42,5 +42,26 @@ function hasSpecialCharacter(str){
 }
 
 
+//com regex
+function validatePasswordRegex(str){    
+    const regex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@&#]).{8,}$/;
+    return regex.test(str);
+}
+
+function validatePasswordRegexPlus(str){    
+    const regexTam = /.{8,}/;
+    const regexChar = /[a-zA-Z]/;
+    const regexUpSm = /\d/;
+    const regexCarac = /[@#&]/;
+    return regexTam.test(str) && regexChar.test(str) && regexUpSm.test(str) && regexCarac.test(str);
+}
+
 console.log(validatePassword("amerca1@"))
 console.log(validatePassword("123654asfdgfDSFJF"))
+
+console.log(validatePasswordRegex("amerca1@"))
+console.log(validatePasswordRegex("123654asfdgfDSFJF#"))
+
+
+console.log(validatePasswordRegexPlus("amerca1@"))
+console.log(validatePasswordRegexPlus("123654asfdgfDSFJF"))
